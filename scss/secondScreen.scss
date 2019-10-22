@@ -1,0 +1,52 @@
+.edao_second-screen__phone {
+  background-image: url(../../assets/img/2-screen-phone.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 198px;
+  height: 397px;
+  background-size: cover;
+}
+
+.edao_second-screen__title {
+  @media (min-width: 576px) { margin-bottom: 23px; }
+  @media (min-width: 768px) { }
+  @media (min-width: 992px) { margin-bottom: 50px; }
+  @media (min-width: 1200px) { }
+}
+
+.edao_second-screen__description {
+  @media (min-width: 576px) {
+    width: 302px;
+    margin-bottom: 23px;
+  }
+  @media (min-width: 768px) { width: 379px; }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { margin-bottom: 23px; }
+}
+
+.edao_second-screen__undertitle-description {
+  max-width: 400px;
+
+  @media (min-width: 576px) { margin-bottom: 23px; }
+  @media (min-width: 768px) { }
+  @media (min-width: 992px) { margin-bottom: 27px; }
+  @media (min-width: 1200px) { margin-bottom: 50px; }
+}
+
+.edao_second-screen__list {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 20px;
+
+  max-width: 430px;
+  list-style: square outside url("../../assets/img/list_li.svg");
+
+  & > li {
+    padding-bottom: 15px;
+  }
+  & > li:last-child {
+    padding-bottom: 0;
+  }
+}
