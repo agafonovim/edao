@@ -1,0 +1,93 @@
+// Пошаговая дорожка
+.edao-step-block {
+  // Вертикальные линии
+  &__vertical {
+    width: 25px;
+    height: 100%;
+    margin-bottom: 51.5px;
+
+    &:first-child {
+      margin-top: 51.5px;
+    }
+
+    &.left {
+      margin-left: 51px;
+    }
+  }
+
+  // Горизонтальные линии
+  &__horizontal {
+    width: 100%;
+    height: 25px;
+    margin-top: 67px;
+    margin-bottom: 67px;
+    margin-right: 51.5px;
+
+    &:first-child {
+      margin-left: 51.5px;
+    }
+  }
+
+  // Номера шагов
+  &__number {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+
+    &.one {
+      background-image: url(../../assets/img/1step.svg);
+      width: 76px;
+      height: 200px;
+    }
+    &.two {
+      background-image: url(../../assets/img/2step.svg);
+      width: 134px;
+      height: 200px;
+      @media (min-width: 576px) { margin-right: -15px; }
+      @media (min-width: 768px) { margin-right: -25px; }
+      @media (min-width: 992px) { margin-right: -40px; }
+      @media (min-width: 1200px) { margin-right: -55px; }
+    }
+    &.three {
+      background-image: url(../../assets/img/3step.svg);
+      width: 124px;
+      height: 200px;
+    }
+    &.four {
+      background-image: url(../../assets/img/4step.svg);
+      width: 145px;
+      height: 200px;
+    }
+  }
+}
+
+// Уголки
+.edao_corner {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 92px;
+  height: 92px;
+  display: block;
+
+  &.black {
+    background-image: url(../../assets/img/cornerBlack.svg);
+  }
+  &.white {
+    background-image: url(../../assets/img/cornerWhite.svg);
+  }
+
+  // Положение уголка
+  &.top-left {
+    transform: rotate(-90deg);
+  }
+  &.top-right {
+  }
+  &.bottom-left {
+    transform: rotate(180deg);
+    margin-left: 51px;
+  }
+  &.bottom-right {
+    transform: rotate(90deg);
+    //
+  }
+}

@@ -1,0 +1,29 @@
+.edao_first-screen__phone {
+  background-image: url(../../assets/img/first-screen-phone.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 198px;
+  height: 396px;
+  background-size: cover;
+}
+
+.edao_first-screen__title {
+  @media (min-width: 576px) { margin-bottom: 38px; }
+  @media (min-width: 768px) { margin-bottom: 65px; }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { margin-bottom: 83px; }
+}
+
+.edao_first-screen__description {
+  @media (min-width: 576px) {
+    width: 302px;
+    margin-bottom: 65px;
+  }
+  @media (min-width: 768px) { width: 379px; }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { margin-bottom: 83px; }
+}
+
+.edao_button-download a img {
+  height: 56px;
+}
