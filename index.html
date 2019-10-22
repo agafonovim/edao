@@ -13,7 +13,7 @@
 <body>
     <!-- Первый экран -->
     <div class="bg-white text-black">
-        <div class="container-fluid py-5 pb-md-0">
+        <div class="container-fluid py-5 pb-md-0 edao-screen">
             <div class="row">
                 <div class="col-md-1 offset-lg-1 d-none d-md-flex flex-column">
                     <div class="flex-shrink-0 flex-grow-0"><span class="edao-step-block__number one"></span></div>
@@ -43,7 +43,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-11 col-lg-10 offset-lg-1 d-none d-md-flex flex-row">
                     <div class="flex-shrink-0 flex-grow-0 align-self-start"><span
                             class="edao_corner black bottom-left"></span></div>
@@ -53,15 +52,14 @@
                         <div class="edao-step-block__horizontal bg-black d-none d-lg-block"></div>
                         <div class="edao-step-block__horizontal bg-black d-none d-md-block"></div>
                     </div>
-                    <div class="flex-shrink-0 flex-grow-0 align-self-end"><span
-                            class="edao_corner black top-right"></span></div>
+                    <div class="flex-shrink-0 flex-grow-0 align-self-end"><span class="edao_corner black top-right"></span></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Второй экран -->
     <div class="bg-black text-white">
-        <div class="container-fluid py-5 pb-md-0">
+        <div class="container-fluid py-5 pb-md-0 edao-screen">
             <div class="row">
                 <div class="col-md-9 col-lg-8 offset-lg-1">
                     <div class="d-flex flex-row justify-content-around">
@@ -112,7 +110,7 @@
     </div>
     <!-- Третий экран -->
     <div class="bg-white text-black">
-        <div class="container-fluid py-5 pb-md-0">
+        <div class="container-fluid py-5 pb-md-0 edao-screen">
             <div class="row">
                 <div class="col-md-1 offset-md-1 d-none d-md-flex flex-column">
                     <div class="flex-shrink-0 flex-grow-0"><span class="edao-step-block__number three"></span></div>
@@ -174,44 +172,75 @@
     </div>
     <!-- Четвертый экран -->
     <div class="bg-black text-white">
-        <div class="container-fluid py-5 pb-md-0">
+        <div class="container-fluid py-5 pb-md-0 edao-screen">
             <div class="row">
-                <div class="col-md-7 offset-md-2 offset-lg-1 col-lg-8">
+                <div class="col-md-7 offset-md-1 offset-lg-2">
                     <div class="d-flex flex-column ml-0 ml-sm-5">
                         <h2 class="edao_title edao_second-screen__title">Описание приложения</h2>
-                        <p class="edao_description edao_second-screen__undertitle-description">
-                            С помощью Edao пользователь может выбрать понравившуюся еду онлайн и забрать свой заказ из ближайшего заведения.
+                        <p class="edao_description edao_fourth-screen__description">
+                            <strong>Технологический стек:</strong>
                         </p>
-                        <p class="edao_description edao_second-screen__description">
-                            Для этого нужно:
+                        <div class="d-flex flex-row flex-wrap my-5 justify-content-around">
+                            <figure class="d-flex flex-column">
+                                <img src="assets/img/Swift.svg" alt="Swift">
+                                <figcaption class="my-3 align-self-center">Swift</figcaption>
+                            </figure>
+                            <figure class="d-flex flex-column">
+                                <img src="assets/img/Kotlin.svg" alt="Kotlin">
+                                <figcaption class="my-3 align-self-center">Kotlin</figcaption>
+                            </figure>
+                            <figure class="d-flex flex-column">
+                                <img src="assets/img/Python.svg" alt="Python">
+                                <figcaption class="my-3 align-self-center">Python</figcaption>
+                            </figure>
+                            <figure class="d-flex flex-column">
+                                <img src="assets/img/Django.svg" alt="Django">
+                                <figcaption class="my-3 align-self-center">Django</figcaption>
+                            </figure>
+                        </div>
+                        <p class="edao_description">
+                            <strong>Архитектура iOS:</strong><br>
+                            Приложение построено на основе шаблона проектирования VIPER. Интеракторы
+                            служат для выполнения бизнес-логики, представления отображают данные, презентеры служат
+                            мостом между представлением, интеракторами и различными побочными сервисами. Роутеры в
+                            текущем шаблоне заменены координаторами.
                         </p>
-                        <ul class="edao_second-screen__list">
-                            <li>Бесплатно скачать Edao из AppStore или Google Play и зарегистрироваться в приложении по номеру телефона.</li>
-                            <li>Включить геолокацию, чтобы увидеть список доступных ближайших ресторанов, а также маршруты и расстояния до них.</li>
-                            <li>Добавить понравившиеся блюда в корзину и оформить заказ.</li>
-                            <li>Получить подтверждение от заведений о наличии выбранных блюд.</li>
-                            <li>Оплатить заказ онлайн и забрать его из ближайшего кафе, бара или ресторана.</li>
-                        </ul>
+                        <p>
+                            <strong>Архитектура Android:</strong><br>
+                            Архитектура базируется на принципах Clean Architecture при использовании
+                            паттернов MVP и DI. В слое представления идет обращение к различным классам модели. Классами
+                            модели являются репозитории, интеракторы, менеджеры, в которых выполняется часть бизнес
+                            логики, хранение и получение сущностей, взаимодействие с API. Каждый экран (View) реализует
+                            определенный интерфейс взаимодействия с Presenter.
+                        </p>
+                        <p>
+                            <strong>Архитектура Backend:</strong><br>
+                            Приложение построено на классическом MVC. Средствами API предоставлена
+                            возможность работы с заказами, магазинами и товарами. Реализована административная часть для
+                            управления заказами.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-1 offset-md-1 d-none d-md-flex flex-column align-content-start">
-                    <div class="flex-shrink-0 flex-grow-0 align-self-center"><span class="edao-step-block__number four"></span></div>
+                <div class="col-md-1 offset-md-2 offset-lg-1 d-none d-md-flex flex-column align-content-start">
+                    <div class="flex-shrink-0 flex-grow-0 align-self-center"><span
+                            class="edao-step-block__number four"></span></div>
                     <div class="d-flex flex-column h-100">
                         <div class="edao-step-block__vertical align-self-end bg-white"></div>
                         <div class="edao-step-block__vertical align-self-end bg-white"></div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
+
                 <div class="col-md-10 offset-md-1 d-none d-md-flex flex-row">
-                    <div class="flex-shrink-0 flex-grow-0 align-self-end"><span class="edao_corner white top-left"></span></div>
+                    <div class="flex-shrink-0 flex-grow-0 align-self-end"><span
+                            class="edao_corner white top-left"></span></div>
                     <div class="d-none d-md-flex flex-row w-100">
                         <div class="edao-step-block__horizontal bg-white"></div>
                         <div class="edao-step-block__horizontal bg-white d-none d-xl-block"></div>
                         <div class="edao-step-block__horizontal bg-white d-none d-lg-block"></div>
                         <div class="edao-step-block__horizontal bg-white d-none d-md-block"></div>
                     </div>
-                    <div class="flex-shrink-0 flex-grow-0 align-self-start"><span class="edao_corner white bottom-right"></span></div>
+                    <div class="flex-shrink-0 flex-grow-0 align-self-start"><span
+                            class="edao_corner white bottom-right"></span></div>
                 </div>
             </div>
         </div>

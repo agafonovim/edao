@@ -57,6 +57,11 @@
       background-image: url(../../assets/img/4step.svg);
       width: 145px;
       height: 200px;
+
+      @media (min-width: 576px) { margin-right: 47px; }
+      @media (min-width: 768px) { margin-right: 32px; }
+      @media (min-width: 992px) { margin-right: 24px; }
+      @media (min-width: 1200px) { margin-right: 8px; }
     }
   }
 }

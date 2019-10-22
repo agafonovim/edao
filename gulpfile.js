@@ -22,7 +22,6 @@ gulp.task('styles', () => {
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(cssnano())
         .pipe(gulp.dest('./assets/css/'));
 });
 
