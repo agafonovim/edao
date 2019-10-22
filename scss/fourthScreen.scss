@@ -1,0 +1,25 @@
+.edao_second-screen__title {
+  @media (min-width: 576px) { margin-bottom: 23px; }
+  @media (min-width: 768px) { }
+  @media (min-width: 992px) { margin-bottom: 50px; }
+  @media (min-width: 1200px) { }
+}
+
+.edao_second-screen__description {
+  @media (min-width: 576px) {
+    width: 302px;
+    margin-bottom: 23px;
+  }
+  @media (min-width: 768px) { width: 379px; }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { margin-bottom: 23px; }
+}
+
+.edao_second-screen__undertitle-description {
+  max-width: 400px;
+
+  @media (min-width: 576px) { margin-bottom: 23px; }
+  @media (min-width: 768px) { }
+  @media (min-width: 992px) { margin-bottom: 27px; }
+  @media (min-width: 1200px) { margin-bottom: 50px; }
+}

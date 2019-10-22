@@ -1,0 +1,50 @@
+.edao_third-screen__phone {
+  background-image: url(../../assets/img/3-screen-phone.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 178px;
+  height: 357px;
+  background-size: cover;
+}
+
+.edao_third-screen__title {
+  width: 100%;
+
+  @media (min-width: 576px) {
+    margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+  @media (min-width: 992px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1200px) { }
+}
+
+.edao_third-screen__description {
+  width: 100%;
+
+  @media (min-width: 576px) {
+    margin-bottom: 23px;
+  }
+  @media (min-width: 768px) {
+    width: 420px;
+  }
+  @media (min-width: 992px) { }
+  @media (min-width: 1200px) { margin-bottom: 23px; }
+}
+
+.edao_third-screen__undertitle-description {
+  width: 100%;
+
+  @media (min-width: 576px) {
+    margin-bottom: 23px;
+  }
+  @media (min-width: 768px) { width: 500px; }
+  @media (min-width: 992px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1200px) { }
+}
