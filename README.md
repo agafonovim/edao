@@ -1,3 +1,3 @@
 # Лэндинг по разработке мобильного приложения "EDAO"
 
-Демо: agafonovim.github.io/edao/
+Демо: https://agafonovim.github.io/edao/
